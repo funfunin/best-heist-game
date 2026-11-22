@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Night Gallery Heist</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e1a; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { position: relative; }
+  canvas { display: block; width: min(96vw, 960px); height: auto; border: 2px solid #8a6d3b; box-shadow: 0 0 40px rgba(0,0,0,.8); background: #11142a; image-rendering: auto; }
+  #hint { position: absolute; left: 0; right: 0; bottom: -26px; text-align: center; color: #8f97b8; font-size: 13px; font-family: system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="700"></canvas>
+  <div id="hint">WASD / arrows to move &middot; 1 noisemaker &middot; 2 smoke puff &middot; 3 lockpick at the vent door &middot; R restart</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
